@@ -19,7 +19,7 @@ app.get("/",(req,res) => {
  .select()
  .from("venues")
  .then((results) => {
-  res.render("index", {aConcerts: results});
+  res.render("index",{aConcerts: results});
  }); 
 });
 app.listen(3000);
